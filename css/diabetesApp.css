@@ -1,0 +1,340 @@
+@font-face {
+    font-family: topicStyle;
+    src: url(good.ttf);
+}
+
+body{
+	background-image:url("b.png");
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+	border-radius: 10px;
+}
+
+.close {
+    color: #aaaaaa;
+	float:right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.blur{
+	-webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+ 
+}
+
+.popUpTitle{
+	font-family: topicStyle;
+	font-size: 42px;
+	color: #1abc9c;
+}
+.popUpTSubitle{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	size: 30px;
+}
+
+
+footer {
+	position: absolute;
+	width: 97%;
+	background-color: #ccc;
+	padding: 10px;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 10px;
+	height: 12%;
+	bottom: -90%;
+	
+}
+
+
+/* Wrapper */
+.icon-button {
+	background-color: white;
+	border-radius: 3.2rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.0rem;
+	height: 3.6rem;
+	line-height: 3.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3.6rem;
+}
+
+#container {
+	display:none;
+	min-width: 310px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+
+.helpBut{
+	width:30px;
+	height:30px;
+	padding: 3px;
+	margin-top: 12px;
+	cursor: help;
+	display: inline;
+}
+.tooltip {
+    position: relative;
+    display: inline;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -1300%;
+    left: 50%;
+    margin-left: -230%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+table {
+	display:none;
+    border-collapse: collapse;
+	margin-top: 30px;
+	box-align:center;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+	width: 19.5%;
+}
+
+tr{
+		background:white;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+.trRed{
+	color:red;
+	font-weight: bold;
+}
+
+th {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.deleteImg{
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.logo img{
+	float: left; 
+	width: 10%;
+	height: 90%;
+}
+
+.buttons{
+	float:right;
+}
+header{
+	background: #f4f7f8;
+	height:15%;
+	border-radius: 15px;
+}
+
+.emailImg{
+	width:30px;
+	height:30px;
+	padding: 3px;
+	margin-top: 12px;
+	cursor: pointer;
+}
+
+.settingImg{
+	width:30px;
+	height:30px;
+	padding: 3px;
+	margin-top: 12px;
+	cursor: pointer;
+}
+.restartImg{
+	width:30px;
+	height:30px;
+	padding: 3px;
+	margin-top: 12px;
+	cursor: pointer;
+}
+
+.topic{
+	color:  #1abc9c;
+	text-align: center;
+	font-family: topicStyle;
+	font-size: 60px;		
+}
+.form-style-5{	
+	display:inline;
+	float:left;
+    width: 35%;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 25px;
+	margin-left : 80px;
+	height:145%;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 20px;
+	border-radius: 10px;
+	-moz-box-shadow: 0 0 10px #f4f7f8;
+	-webkit-box-shadow: 0 0 100px #f4f7f8;
+	box-shadow: 0 0 0.1px black;
+}
+.form-style-5 fieldset{
+    border: none;
+}
+.form-style-5 legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.form-style-5 label {
+    display: block;
+    margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="email"],
+.form-style-5 textarea,
+.form-style-5 select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 60px;   
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+    background: #d2d9dd;
+}
+.form-style-5 select{
+    -webkit-appearance: menulist-button;
+    height:35px;
+}
+.form-style-5 .number {
+    background: #1abc9c;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+	cursor: pointer;
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+	border-radius: 5px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+    background: #109177;
+}

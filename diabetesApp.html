@@ -1,0 +1,69 @@
+<!doctype html5>
+<html>
+    <head>
+        <title>Diabetes App</title>
+        <link rel="icon" href="css/logo.png" type="image/x-icon"/>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/diabetesApp.css"  />
+        <link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- third party javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        
+        <!-- Scripts  --> 
+        <script src="js/diabetesApp.js"></script>
+        <script src="js/WebStorageAPI.js"></script>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+		<script type="text/javascript">
+			(function(){
+				emailjs.init("user_wZAfZILAJF9OZUWVw4obK");
+			})();
+		</script>
+		
+		
+		<script src="js/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    </head>
+    <body>
+        <header>
+			<div class="logo">
+				<img src="css/logo.png"/>
+			</div>
+			<div class="buttons">
+			</div>
+			<div class= "topic">
+				Diabetes App
+			</div>	
+        </header>
+		<main>
+			<div class="popUp" id= "popUp"></div>
+			<div class= "form-style-5">
+				<form id = "Form" action = "#">
+				</form>
+			</div>
+			<div class= "form-style-5">
+				<form id = "showTable" action = "#">			
+				</form>
+			</div>
+				
+			</p>
+			<div id="myModal" class="modal">
+				<div class="modal-content" ><span class="close" id="close">&times;</span> 
+					 <div id="container">
+					 </div>
+					 <table>
+					</table>
+				</div>
+			</div>
+		</main>
+		<footer>
+				<img src="css/twitter.png" class="icon-button twitter">
+				<img src="css/facebook.png" class="icon-button facebook">
+				<img src="css/github.png" class="icon-button github">
+				</br>
+			copyrights: Gal Batz, Amir Erez. <a href = "http://www.google.co.il" target="_blank">terms of use</a>, 16.11.16.
+		</footer>	
+    </body>
+</html>
